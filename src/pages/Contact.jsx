@@ -17,13 +17,13 @@ function Contact() {
   };
 
   return (
-    <div
+    <section
       id="contact"
       className="relative flex flex-col justify-center items-center scroll-mt-16"
     >
       <h1 className="text-3xl font-bold text-black mt-4">
-        <span className="inline-block animate-bounce">🚀</span> Contact Me{" "}
-        <span className="inline-block ">💫</span>
+        <span className="inline-block animate-bounce">📩</span> Contact Me{" "}
+        <span className="inline-block animate-ping">🤝</span>
       </h1>
       <CenterBlurBackground />
       <div className="text-center w-200 mt-4">
@@ -83,7 +83,7 @@ function Contact() {
         </form>
       </div>
       <div className="h-32" />
-    </div>
+    </section>
   );
 }
 

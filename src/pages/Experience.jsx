@@ -1,18 +1,18 @@
-import CenterBlurBackgroundV2 from "../components/CenterBlurBackgroundV2";
+import AnimatedBavkgroundV2 from "../components/AnimatedBavkgroundV2";
 import ProjectCard from "../components/ProjectCard";
 
 function Experience() {
   return (
-    <div
+    <section
       id="experience"
       className="relative flex flex-col justify-center items-center scroll-mt-20"
     >
+      <AnimatedBavkgroundV2 />
       <h1 className="text-3xl font-bold text-black mt-4">
-        <span className="inline-block animate-bounce">🚀</span> Experience{" "}
-        <span className="inline-block ">💫</span>
+        <span className="inline-block animate-pulse">💼</span> Experience{" "}
+        <span className="inline-block animate-bounce">📈</span>
       </h1>
       <div className="relative flex justify-center text-center mt-4 gap-8">
-        <CenterBlurBackgroundV2 size={120} blur={80} opacity={0.4} />
         <ProjectCard>
           <div className="w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="text-left p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
@@ -39,7 +39,6 @@ function Experience() {
       </div>
       <br />
       <div className="relative flex justify-center text-center mt-4 gap-8">
-        <CenterBlurBackgroundV2 size={80} blur={80} opacity={0.5} />
         <ProjectCard>
           <div className="w-120 text-right">
             <h3 className="py-5">01/2022 - 07/2025</h3>
@@ -64,7 +63,6 @@ function Experience() {
       </div>
       <br />
       <div className="relative flex justify-center text-center mt-4 gap-8">
-        <CenterBlurBackgroundV2 size={120} blur={80} opacity={0.4} />
         <ProjectCard>
           <div className="w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="text-left p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
@@ -90,7 +88,7 @@ function Experience() {
         </ProjectCard>
       </div>
       <div className="h-32" />
-    </div>
+    </section>
   );
 }
 

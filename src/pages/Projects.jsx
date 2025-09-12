@@ -1,14 +1,16 @@
 import ProjectCard from "../components/ProjectCard";
+import AnimatedBavkgroundV2 from "../components/AnimatedBavkgroundV2";
 
 function Projects() {
   return (
-    <div
+    <section
       id="projects"
-      className="flex flex-col justify-center items-center scroll-mt-10"
+      className="relative flex flex-col justify-center items-center scroll-mt-10 "
     >
+      <AnimatedBavkgroundV2 />
       <h1 className="text-3xl font-bold text-black mt-16">
-        <span className="inline-block animate-bounce">🚀</span> Projects{" "}
-        <span className="inline-block ">💫</span>
+        <span className="inline-block animate-bounce">💻</span> Projects{" "}
+        <span className="inline-block animate-pulse">🚧</span>
       </h1>
       <ProjectCard>
         <div className="flex w-200 mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
@@ -106,7 +108,7 @@ function Projects() {
         </div>
       </ProjectCard>
       <div className="h-32" />
-    </div>
+    </section>
   );
 }
 

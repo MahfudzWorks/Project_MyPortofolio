@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import CenterBlurBackgroundV2 from "../components/CenterBlurBackgroundV2";
 
 import {
   FaHtml5,
@@ -31,13 +32,14 @@ function Skills() {
   ];
 
   return (
-    <div
+    <section
       id="skills"
       className="flex flex-col justify-center items-center px-6 py-12 relative scroll-mt-10"
     >
+      <CenterBlurBackgroundV2 />
       <h1 className="text-3xl font-bold text-black mb-6">
-        <span className="inline-block animate-bounce">🚀</span> Skills{" "}
-        <span className="inline-block">💫</span>
+        <span className="inline-block animate-spin">🛠️</span> Skills{" "}
+        <span className="inline-block animate-bounce">⚡</span>
       </h1>
 
       <p className="text-center max-w-2xl text-gray-600 mb-12">
@@ -65,7 +67,7 @@ function Skills() {
         ))}
       </div>
       <div className="h-32" />
-    </div>
+    </section>
   );
 }
 

@@ -2,14 +2,15 @@ function About() {
   return (
     <section
       id="about"
-      className="flex flex-col justify-center items-center scroll-mt-26"
+      className="flex flex-col justify-center items-center scroll-mt-26 px-4 sm:px-6 lg:px-0"
     >
-      <h1 className="text-3xl font-bold text-black mt-4">
+      <h1 className="text-2xl sm:text-3xl font-bold text-black mt-4 text-center">
         <span className="inline-block">👨‍💻</span> About Me{" "}
         <span className="inline-block animate-spin">🌟</span>
       </h1>
-      <div className="text-center w-200 mt-4">
-        <p>
+
+      <div className="text-center max-w-3xl mt-4 sm:mt-6">
+        <p className="text-sm sm:text-base leading-relaxed">
           Selama kuliah saya aktif sebagai Sekretaris Karang Taruna serta
           mengelola usaha Jasa Joki Tugas Vyyy yang menyediakan layanan akademik
           dan pengembangan website.
@@ -24,7 +25,8 @@ function About() {
           pengembangan solusi digital di bidang teknologi.
         </p>
       </div>
-      <div className="h-32" />
+
+      <div className="h-20 sm:h-32" />
     </section>
   );
 }

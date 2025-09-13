@@ -58,11 +58,9 @@ function Projects() {
         <span className="inline-block animate-pulse">🚧</span>
       </h1>
 
-      {/* ✅ looping project */}
       {projects.map((project) => (
         <ProjectCard key={project.id}>
-          <div className="flex justify-between w-full mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
-            {/* Kiri */}
+          <div className="flex flex-col sm:flex-row justify-between w-full mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
             <div className="w-100 flex flex-col bg-white p-6 shadow-lg flex-1">
               <h2 className="font-semibold">{project.title}</h2>
               <br />
@@ -92,7 +90,6 @@ function Projects() {
               </div>
             </div>
 
-            {/* Kanan */}
             <div className="w-100 bg-white flex justify-center items-center">
               <img
                 src={project.image}

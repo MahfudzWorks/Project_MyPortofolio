@@ -48,18 +48,18 @@ function Skills() {
       </p>
 
       {/* Grid Skills */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {skills.map((skill, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.08 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 200, damping: 15 }}
-            className="w-48 h-48 p-[2px] rounded-2xl bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]"
+            className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 p-[2px] rounded-2xl bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]"
           >
             <div className="flex flex-col items-center justify-center w-full h-full bg-white backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl">
               <div className="mb-4">{skill.icon}</div>
-              <h3 className="font-semibold text-lg text-gray-800">
+              <h3 className="font-semibold text-sm sm:text-base md:text-lg text-gray-800">
                 {skill.name}
               </h3>
             </div>

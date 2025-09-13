@@ -30,7 +30,7 @@ function Experience() {
         </ProjectCard>
         <div
           className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
-             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+             bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img
@@ -55,7 +55,7 @@ function Experience() {
         </ProjectCard>
         <div
           className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
-             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+            bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img
@@ -100,7 +100,7 @@ function Experience() {
         </ProjectCard>
         <div
           className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
-             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+             bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img
@@ -125,7 +125,7 @@ function Experience() {
         </ProjectCard>
         <div
           className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
-             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+             bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img

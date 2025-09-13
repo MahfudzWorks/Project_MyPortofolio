@@ -30,16 +30,37 @@ function Home() {
         <div className="flex gap-4 mt-6 justify-center">
           <a
             href="#contact"
-            className="bg-black hover:bg-gradient-to-r hover:from-purple-500 hover:to-yellow-500 text-white text-l px-6 py-3 rounded-3xl flex items-center gap-2 font-semibold transition duration-300 shadow-md"
+            className="mt-2 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-3xl inline-block"
           >
-            Contact me here <HiArrowRight className="w-5 h-5" />
+            <div
+              className="flex items-center gap-2 
+                 bg-black text-white 
+                 font-semibold px-6 py-3 rounded-3xl 
+                 transition-all duration-300 ease-in-out
+                 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-yellow-400
+                 hover:shadow-md active:scale-[0.98]"
+            >
+              <span>Contact me here</span>
+              <HiArrowRight className="w-5 h-5" />
+            </div>
           </a>
+
           <a
             href="/src/assets/CV.pdf"
             download
-            className="bg-white hover:bg-gradient-to-r hover:from-purple-200 hover:to-yellow-200 text-black text-l py-3 px-6 rounded-3xl flex items-center gap-2 font-semibold transition duration-300 shadow-md"
+            className="mt-2 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-3xl inline-block"
           >
-            Download CV <span>⬇️</span>
+            <div
+              className="flex items-center gap-2 
+                 bg-white text-black 
+                 font-semibold px-6 py-3 rounded-3xl 
+                 transition-all duration-300 ease-in-out
+                 hover:bg-gradient-to-r hover:from-purple-200 hover:via-pink-200 hover:to-yellow-100
+                 hover:shadow-md active:scale-[0.98]"
+            >
+              <span>Download CV</span>
+              <span>⬇️</span>
+            </div>
           </a>
         </div>
 
@@ -71,9 +92,12 @@ function Home() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow hover:shadow-lg transition duration-300"
+              className="p-[2px] rounded-full bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500
+                 hover:shadow-lg transition duration-300"
             >
-              <img src={social.icon} alt={social.alt} className="w-8 h-8" />
+              <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center">
+                <img src={social.icon} alt={social.alt} className="w-8 h-8" />
+              </div>
             </a>
           ))}
         </div>

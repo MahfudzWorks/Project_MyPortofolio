@@ -14,7 +14,6 @@ function FloatingBackground() {
     "bg-green-500 blur-xl opacity-40 w-24 h-24",
   ];
 
-  // buat positions sesuai jumlah circle
   const [positions, setPositions] = useState(
     Array(circles.length).fill({ x: 0, y: 0 })
   );
@@ -45,7 +44,8 @@ function FloatingBackground() {
           }}
           style={{
             top: `${20 + i * 10}%`,
-            left: `${20 + i * 15}%`,
+            left: `50%`,
+            translateX: "-50%",
           }}
         />
       ))}

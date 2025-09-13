@@ -28,8 +28,17 @@ function Experience() {
             </div>
           </div>
         </ProjectCard>
-        <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shrink-0">
-          <img src="/src/assets/icon/folder.svg" alt="folder" className="w-8" />
+        <div
+          className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
+             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+        >
+          <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
+            <img
+              src="/src/assets/icon/folder.svg"
+              alt="folder"
+              className="w-8"
+            />
+          </div>
         </div>
         <ProjectCard>
           <div className="w-120 text-left">
@@ -44,8 +53,17 @@ function Experience() {
             <h3 className="py-5">08/2021 - 09/2025</h3>
           </div>
         </ProjectCard>
-        <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shrink-0">
-          <img src="/src/assets/icon/folder.svg" alt="folder" className="w-8" />
+        <div
+          className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
+             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+        >
+          <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
+            <img
+              src="/src/assets/icon/folder.svg"
+              alt="folder"
+              className="w-8"
+            />
+          </div>
         </div>
         <ProjectCard>
           <div className="w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
@@ -80,8 +98,17 @@ function Experience() {
             </div>
           </div>
         </ProjectCard>
-        <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shrink-0">
-          <img src="/src/assets/icon/folder.svg" alt="folder" className="w-8" />
+        <div
+          className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
+             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+        >
+          <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
+            <img
+              src="/src/assets/icon/folder.svg"
+              alt="folder"
+              className="w-8"
+            />
+          </div>
         </div>
         <ProjectCard>
           <div className="w-120 text-left">
@@ -96,8 +123,17 @@ function Experience() {
             <h3 className="py-5">01/2022 - 07/2025</h3>
           </div>
         </ProjectCard>
-        <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shrink-0">
-          <img src="/src/assets/icon/folder.svg" alt="folder" className="w-8" />
+        <div
+          className="rounded-full w-16 h-16 flex items-center justify-center shrink-0 
+             bg-gradient-to-r from-blue-500 via-red-500 via-yellow-400 to-green-500 p-[2px]"
+        >
+          <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
+            <img
+              src="/src/assets/icon/folder.svg"
+              alt="folder"
+              className="w-8"
+            />
+          </div>
         </div>
         <ProjectCard>
           <div className="w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">

@@ -21,10 +21,10 @@ function Home() {
         </h1>
 
         <p className="text-gray-700 mt-4 leading-relaxed">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-          quod assumenda voluptas ad optio aut blanditiis sapiente veritatis,
-          quibusdam sequi eveniet dignissimos suscipit omnis molestiae maxime
-          tempore doloremque numquam obcaecati. ✨
+          Sarjana Teknik Informatika Universitas Muhammadiyah Gresik tahun 2025.
+          Saya memiliki keahlian dalam pengembangan dan pengelolaan website,
+          mulai dari perancangan hingga implementasi sistem, serta terbiasa
+          mengembangkan solusi digital yang efektif dan fungsional. ✨
         </p>
 
         <div className="flex gap-4 mt-6 justify-center">

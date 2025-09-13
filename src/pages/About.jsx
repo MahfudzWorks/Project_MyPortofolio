@@ -10,10 +10,18 @@ function About() {
       </h1>
       <div className="text-center w-200 mt-4">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-          commodi qui consectetur cumque suscipit odit, fuga delectus.
-          Cupiditate neque possimus saepe. Quidem eaque modi aperiam cum
-          explicabo earum perspiciatis reiciendis.
+          Selama kuliah saya aktif sebagai Sekretaris Karang Taruna serta
+          mengelola usaha Jasa Joki Tugas Vyyy yang menyediakan layanan akademik
+          dan pengembangan website.
+          <br />
+          <br />
+          Saya juga berpengalaman sebagai Software Developer di CV Fintechnology
+          Consultant Indonesian, terlibat dalam pengembangan sistem termasuk
+          website e-commerce.
+          <br />
+          <br />
+          Pengalaman ini memperkuat kemampuan saya dalam pengelolaan data dan
+          pengembangan solusi digital di bidang teknologi.
         </p>
       </div>
       <div className="h-32" />

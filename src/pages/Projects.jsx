@@ -1,7 +1,52 @@
 import ProjectCard from "../components/ProjectCard";
 import AnimatedBavkgroundV2 from "../components/AnimatedBavkgroundV2";
+import { useState } from "react";
 
 function Projects() {
+  const [showMore, setShowMore] = useState({});
+
+  const toggleShowMore = (id) => {
+    setShowMore((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const projects = [
+    {
+      id: 1,
+      title: "Project Sistem E-Commerce BestCell",
+      text: "SIREPEN-BestCell adalah sistem informasi yang dirancang untuk mendukung proses penjualan handphone di Toko BestCell. Sistem ini dilengkapi dengan fitur rekomendasi produk berbasis User-Based Collaborative Filtering (UBCF) untuk membantu pelanggan menemukan produk sesuai preferensi mereka. Pada sisi admin, sistem ini menyediakan fitur manajemen keuangan yang menampilkan laporan transaksi, pencatatan penjualan, serta ringkasan pendapatan, sehingga memudahkan pengelolaan dan pengambilan keputusan.",
+      image: "/src/assets/P-BestCell.svg",
+      icons: [
+        "/src/assets/icon/Laravel.svg",
+        "/src/assets/icon/PHP.svg",
+        "/src/assets/icon/CSS3.svg",
+        "/src/assets/icon/JavaScript.svg",
+        "/src/assets/icon/MySQL.svg",
+      ],
+    },
+    {
+      id: 2,
+      title: "Project Landing Page PNRB",
+      text: "Website resmi Pagarnusa Ranting Balongmojo yang dibuat untuk memberikan informasi mengenai kegiatan, struktur organisasi, galeri, dan berita terbaru. Dibangun menggunakan HTML, CSS, JavaScript bisa disesuaikan jika pakai framework lain.",
+      image: "/src/assets/P-PNRB.svg",
+      icons: [
+        "/src/assets/icon/Html5.svg",
+        "/src/assets/icon/CSS3.svg",
+        "/src/assets/icon/JavaScript.svg",
+      ],
+    },
+    {
+      id: 3,
+      title: "Project Landing Page Gym24",
+      text: "Landing page untuk Gym24, pusat kebugaran yang menawarkan fasilitas modern, pelatih profesional, dan berbagai pilihan membership. Website ini dibuat untuk mempromosikan layanan Gym24 dengan tampilan modern, responsif, dan mudah digunakan.",
+      image: "/src/assets/P-Gym.svg",
+      icons: [
+        "/src/assets/icon/Html5.svg",
+        "/src/assets/icon/CSS3.svg",
+        "/src/assets/icon/JavaScript.svg",
+      ],
+    },
+  ];
+
   return (
     <section
       id="projects"
@@ -12,101 +57,53 @@ function Projects() {
         <span className="inline-block animate-bounce">💻</span> Projects{" "}
         <span className="inline-block animate-pulse">🚧</span>
       </h1>
-      <ProjectCard>
-        <div className="flex w-200 mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
-          <div className="flex flex-col bg-white p-6 shadow-lg">
-            <h2 className="font-semibold">
-              Project Sistem E-Commerce BestCell
-            </h2>
-            <br />
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              est qui minima vel illum magnam officiis molestiae sapiente veniam
-              error rem quibusdam dolorum tenetur repellat rerum distinctio
-              velit accusantium architecto.
-            </p>
-            <br />
-            <div className="flex w-12 gap-4">
-              <img src="/src/assets/icon/Laravel.svg" alt="laravel" />
-              <img src="/src/assets/icon/PHP.svg" alt="php" />
-              <img src="/src/assets/icon/CSS3.svg" alt="css" />
-              <img src="/src/assets/icon/JavaScript.svg" alt="js" />
-              <img src="/src/assets/icon/MySQL.svg" alt="sql" />
+
+      {/* ✅ looping project */}
+      {projects.map((project) => (
+        <ProjectCard key={project.id}>
+          <div className="flex justify-between w-full mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
+            {/* Kiri */}
+            <div className="w-100 flex flex-col bg-white p-6 shadow-lg flex-1">
+              <h2 className="font-semibold">{project.title}</h2>
+              <br />
+              <p className="text-gray-600">
+                {showMore[project.id]
+                  ? project.text
+                  : project.text.substring(0, 150) + "..."}
+              </p>
+              <button
+                onClick={() => toggleShowMore(project.id)}
+                className="text-left text-gray-600 font-semibold mt-2 hover:underline"
+              >
+                {showMore[project.id]
+                  ? "Tampilkan lebih sedikit"
+                  : "Tampilkan lebih banyak"}
+              </button>
+              <br />
+              <div className="flex gap-4">
+                {project.icons.map((icon, index) => (
+                  <img
+                    key={index}
+                    src={icon}
+                    alt="icon"
+                    className="w-12 h-12"
+                  />
+                ))}
+              </div>
             </div>
-          </div>
-          <div className="bg-white">
-            <img
-              src="/src/assets/P-BestCell.svg"
-              alt="P-BestCell"
-              className="my-10 shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]"
-            />
-          </div>
-        </div>
-      </ProjectCard>
-      <br />
-      <ProjectCard>
-        <div className="flex w-200 mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
-          <div className="bg-white z-10">
-            <img
-              src="/src/assets/P-PNRB.svg"
-              alt="P-PNRB"
-              className="my-10 shadow-[5px_10px_15px_rgba(0,0,0,0.2)]"
-            />
-          </div>
-          <div className="flex flex-col bg-white p-6 shadow-lg text-right">
-            <h2 className="font-semibold">Project Landing Page PNRB</h2>
-            <br />
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              est qui minima vel illum magnam officiis molestiae sapiente veniam
-              error rem quibusdam dolorum tenetur repellat rerum distinctio
-              velit accusantium architecto.
-            </p>
-            <br />
-            <div className="flex gap-4 justify-end">
+
+            {/* Kanan */}
+            <div className="w-100 bg-white flex justify-center items-center">
               <img
-                src="/src/assets/icon/Html5.svg"
-                alt="laravel"
-                className="w-12"
-              />
-              <img src="/src/assets/icon/CSS3.svg" alt="css" className="w-12" />
-              <img
-                src="/src/assets/icon/JavaScript.svg"
-                alt="js"
-                className="w-12"
+                src={project.image}
+                alt={project.title}
+                className="w-full h-auto my-10 shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]"
               />
             </div>
           </div>
-        </div>
-      </ProjectCard>
-      <br />
-      <ProjectCard>
-        <div className="flex w-200 mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
-          <div className="flex flex-col bg-white p-6 shadow-lg">
-            <h2 className="font-semibold">Project Landing Page Gym24</h2>
-            <br />
-            <p className="text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-              est qui minima vel illum magnam officiis molestiae sapiente veniam
-              error rem quibusdam dolorum tenetur repellat rerum distinctio
-              velit accusantium architecto.
-            </p>
-            <br />
-            <div className="flex w-12 gap-4">
-              <img src="/src/assets/icon/Html5.svg" alt="laravel" />
-              <img src="/src/assets/icon/CSS3.svg" alt="css" />
-              <img src="/src/assets/icon/JavaScript.svg" alt="js" />
-            </div>
-          </div>
-          <div className="bg-white">
-            <img
-              src="/src/assets/P-Gym.svg"
-              alt="P-BestCell"
-              className="my-10 shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]"
-            />
-          </div>
-        </div>
-      </ProjectCard>
+        </ProjectCard>
+      ))}
+
       <div className="h-32" />
     </section>
   );

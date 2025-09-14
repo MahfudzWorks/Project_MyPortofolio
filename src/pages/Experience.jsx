@@ -38,7 +38,7 @@ function Experience() {
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img
-              src="/src/assets/icon/folder.svg"
+              src="src/assets/icon/folder.svg"
               alt="folder"
               className="w-8"
             />
@@ -67,7 +67,7 @@ function Experience() {
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img
-              src="/src/assets/icon/folder.svg"
+              src="src/assets/icon/folder.svg"
               alt="folder"
               className="w-8"
             />
@@ -118,7 +118,7 @@ function Experience() {
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img
-              src="/src/assets/icon/folder.svg"
+              src="src/assets/icon/folder.svg"
               alt="folder"
               className="w-8"
             />
@@ -147,7 +147,7 @@ function Experience() {
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
             <img
-              src="/src/assets/icon/folder.svg"
+              src="src/assets/icon/folder.svg"
               alt="folder"
               className="w-8"
             />

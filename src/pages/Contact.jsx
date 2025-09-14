@@ -74,7 +74,7 @@ function Contact() {
             >
               Send via WhatsApp
               <img
-                src="/src/assets/icon/WhatsappLogo.svg"
+                src="src/assets/icon/WhatsappLogo.svg"
                 alt="WA"
                 className="w-6 sm:w-8"
               />

@@ -32,11 +32,11 @@ function FloatingBackground() {
   }, []);
 
   return (
-    <div className="absolute inset-0 -z-10 ">
+    <div className="absolute inset-0 -z-10 overflow-hidden">
       {circles.map((style, i) => (
         <motion.div
           key={i}
-          className={`absolute rounded-full ${style}`}
+          className={`absolute rounded-full overflow-hidden ${style}`}
           animate={positions[i]}
           transition={{
             duration: 3,

@@ -40,7 +40,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="w-160 mx-auto rounded-4xl p-3 m-2 shadow-lg sticky top-2 z-50">
+    <div className="md:w-160 mx-auto rounded-4xl p-3 m-2 shadow-lg sticky top-2 z-50">
       {" "}
       <nav className="flex justify-center bg-white text-black gap-4 rounded-3xl">
         <ul className="hidden md:flex list-none space-x-8 items-center">

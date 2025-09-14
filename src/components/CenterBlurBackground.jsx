@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function CenterBlurBackground() {
   return (
-    <div className="absolute inset-0 -z-10 flex justify-center items-center">
+    <div className="absolute inset-0 -z-10 flex justify-center items-center overflow-hidden">
       <motion.div
         className="w-[250px] h-[250px] rounded-full blur-[200px] opacity-70"
         animate={{

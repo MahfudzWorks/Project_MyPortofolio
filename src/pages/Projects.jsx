@@ -60,42 +60,44 @@ function Projects() {
 
       {projects.map((project) => (
         <ProjectCard key={project.id}>
-          <div className="flex flex-col sm:flex-row justify-between w-full mt-4 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
-            <div className="w-100 flex flex-col bg-white p-6 shadow-lg flex-1">
-              <h2 className="font-semibold">{project.title}</h2>
-              <br />
-              <p className="text-gray-600">
-                {showMore[project.id]
-                  ? project.text
-                  : project.text.substring(0, 150) + "..."}
-              </p>
-              <button
-                onClick={() => toggleShowMore(project.id)}
-                className="text-left text-gray-600 font-semibold mt-2 hover:underline"
-              >
-                {showMore[project.id]
-                  ? "Tampilkan lebih sedikit"
-                  : "Tampilkan lebih banyak"}
-              </button>
-              <br />
-              <div className="flex gap-4">
-                {project.icons.map((icon, index) => (
-                  <img
-                    key={index}
-                    src={icon}
-                    alt="icon"
-                    className="w-12 h-12"
-                  />
-                ))}
+          <div className="flex flex-col md:flex-row justify-between w-full mt-4">
+            <div className="md:flex p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
+              <div className="w-100 flex flex-col bg-white p-6 shadow-lg flex-1 items-center md:items-start">
+                <h2 className="font-semibold">{project.title}</h2>
+                <br />
+                <p className="text-gray-600">
+                  {showMore[project.id]
+                    ? project.text
+                    : project.text.substring(0, 150) + "..."}
+                </p>
+                <button
+                  onClick={() => toggleShowMore(project.id)}
+                  className="md:text-left text-gray-600 font-semibold mt-2 hover:underline"
+                >
+                  {showMore[project.id]
+                    ? "Tampilkan lebih sedikit"
+                    : "Tampilkan lebih banyak"}
+                </button>
+                <br />
+                <div className="flex gap-4">
+                  {project.icons.map((icon, index) => (
+                    <img
+                      key={index}
+                      src={icon}
+                      alt="icon"
+                      className="w-12 h-12"
+                    />
+                  ))}
+                </div>
               </div>
-            </div>
 
-            <div className="w-100 bg-white flex justify-center items-center">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-auto my-10 shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]"
-              />
+              <div className="w-100 bg-white flex justify-center items-center">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-auto my-10 shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]"
+                />
+              </div>
             </div>
           </div>
         </ProjectCard>

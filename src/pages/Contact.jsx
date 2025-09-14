@@ -39,7 +39,6 @@ function Contact() {
           onSubmit={handleWhatsApp}
           className="justify-center items-center mt-8 flex flex-col gap-4 w-full max-w-xl mx-auto"
         >
-          {/* Input Email */}
           <div className="w-full p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-lg">
             <input
               type="email"
@@ -52,7 +51,6 @@ function Contact() {
             />
           </div>
 
-          {/* Textarea */}
           <div className="w-full p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-lg">
             <textarea
               name="message"
@@ -65,7 +63,6 @@ function Contact() {
             ></textarea>
           </div>
 
-          {/* Button */}
           <div className="p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-lg">
             <button
               type="submit"

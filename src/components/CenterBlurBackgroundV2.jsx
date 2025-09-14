@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function CenterBlurBackgroundV2({ size = 150, blur = 100, opacity = 0.5 }) {
   return (
-    <div className="absolute inset-0 -z-10 flex justify-center items-center">
+    <div className="absolute inset-0 -z-10 flex justify-center items-center overflow-hidden">
       <motion.div
         className={`rounded-full`}
         style={{

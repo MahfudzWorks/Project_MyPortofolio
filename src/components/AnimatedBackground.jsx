@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function AnimatedBackground() {
   return (
-    <div className="absolute inset-0 -z-10 overflow-visible">
+    <div className="absolute inset-0 -z-10 overflow-hidden ">
       <motion.div
         className="absolute w-72 h-72 bg-blue-400 rounded-full filter blur-3xl opacity-30"
         animate={{

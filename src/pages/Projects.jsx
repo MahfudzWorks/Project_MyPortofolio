@@ -60,7 +60,7 @@ function Projects() {
 
       {projects.map((project) => (
         <ProjectCard key={project.id}>
-          <div className="flex flex-col md:flex-row justify-between w-full mt-4 mx-auto">
+          <div className="flex flex-col md:flex-row justify-between px-8 w-full mt-4 mx-auto">
             <div className="md:flex p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
               <div className="w-100 flex flex-col bg-white p-6 shadow-lg flex-1 items-center md:items-start">
                 <h2 className="font-semibold">{project.title}</h2>

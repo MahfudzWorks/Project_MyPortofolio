@@ -14,7 +14,7 @@ function Experience() {
       </h1>
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 max-w-xl mx-auto">
         <ProjectCard>
           <div className="md:w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="md:text-left text-center p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
@@ -50,7 +50,7 @@ function Experience() {
 
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 max-w-xl mx-auto">
         <ProjectCard>
           <div className="hidden w-120 md:flex md:justify-end">
             <h3 className="py-5 ">08/2024 - 12/2024</h3>
@@ -86,7 +86,7 @@ function Experience() {
 
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 max-w-xl mx-auto">
         <ProjectCard>
           <div className="md:w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="md:text-left text-center p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
@@ -122,7 +122,7 @@ function Experience() {
 
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center mt-4 md:gap-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center mt-4 md:gap-8 px-8 max-w-xl mx-auto">
         <ProjectCard>
           <div className="hidden w-120 md:flex md:justify-end">
             <h3 className="py-5 ">08/2024 - 12/2024</h3>

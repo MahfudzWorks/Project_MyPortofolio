@@ -59,8 +59,8 @@ function License() {
     >
       <AnimatedBackground />
       <h1 className="text-3xl font-bold text-black mb-6">
-        <span className="inline-block animate-pulse">📜</span> License &
-        Certificates <span className="inline-block animate-ping">✅</span>
+        <span className="inline-block animate-pulse">📜</span> License{" "}
+        <span className="inline-block animate-ping">✅</span>
       </h1>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto px-8">

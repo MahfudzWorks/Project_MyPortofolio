@@ -37,11 +37,7 @@ function Experience() {
              bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
-            <img
-              src="src/assets/icon/folder.svg"
-              alt="folder"
-              className="w-8"
-            />
+            <img src="assets/icon/folder.svg" alt="folder" className="w-8" />
           </div>
         </div>
 
@@ -66,11 +62,7 @@ function Experience() {
              bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
-            <img
-              src="src/assets/icon/folder.svg"
-              alt="folder"
-              className="w-8"
-            />
+            <img src="assets/icon/folder.svg" alt="folder" className="w-8" />
           </div>
         </div>
 
@@ -117,11 +109,7 @@ function Experience() {
              bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
-            <img
-              src="src/assets/icon/folder.svg"
-              alt="folder"
-              className="w-8"
-            />
+            <img src="assets/icon/folder.svg" alt="folder" className="w-8" />
           </div>
         </div>
 
@@ -146,11 +134,7 @@ function Experience() {
              bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] p-[2px]"
         >
           <div className="bg-white w-full h-full rounded-full flex items-center justify-center">
-            <img
-              src="src/assets/icon/folder.svg"
-              alt="folder"
-              className="w-8"
-            />
+            <img src="assets/icon/folder.svg" alt="folder" className="w-8" />
           </div>
         </div>
 

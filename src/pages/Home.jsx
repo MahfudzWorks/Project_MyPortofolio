@@ -11,7 +11,7 @@ function Home() {
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-3xl px-4 sm:px-6">
         <img
-          src="src/assets/Profile.png"
+          src="assets/Profile.png"
           alt="profile"
           className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white shadow-lg object-cover"
         />
@@ -47,7 +47,7 @@ function Home() {
           </a>
 
           <a
-            href="src/assets/CV.pdf"
+            href="assets/CV.pdf"
             download
             className="p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-3xl inline-block"
           >
@@ -70,22 +70,22 @@ function Home() {
           {[
             {
               href: "https://www.linkedin.com/in/mahfudz-alfanani-syaviqi-572258321/",
-              icon: "src/assets/icon/LinkedIn.svg",
+              icon: "assets/icon/LinkedIn.svg",
               alt: "LinkedIn",
             },
             {
               href: "https://wa.me/6282140363716",
-              icon: "src/assets/icon/WhatsApp.svg",
+              icon: "assets/icon/WhatsApp.svg",
               alt: "WhatsApp",
             },
             {
               href: "https://github.com/MahfudzWorks",
-              icon: "src/assets/icon/GitHub.svg",
+              icon: "assets/icon/GitHub.svg",
               alt: "GitHub",
             },
             {
               href: "https://www.instagram.com/mahfudzalfa_/",
-              icon: "src/assets/icon/Instagram.svg",
+              icon: "assets/icon/Instagram.svg",
               alt: "Instagram",
             },
           ].map((social, index) => (

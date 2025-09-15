@@ -21,7 +21,7 @@ function ProjectCard({ children }) {
         duration: 0.8,
         ease: [0.25, 0.1, 0.25, 1],
       }}
-      className="will-change-transform"
+      className="will-change-transform overflow-hidden"
     >
       {children}
     </motion.div>

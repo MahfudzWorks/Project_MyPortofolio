@@ -14,19 +14,19 @@ function Experience() {
       </h1>
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 mx-auto">
         <ProjectCard>
           <div className="md:w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="md:text-left text-center p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
-              <h2 className="font-semibold">Owner</h2>
-              <h3 className="font-semibold">Jasa Joki Tugas Vyyy</h3>
+              <h2 className="font-semibold">Software Developer</h2>
+              <h3 className="font-semibold">
+                CV. Fintechnology Consultant Indonesian
+              </h3>
               <h3 className="md:hidden font-semibold">08/2024 - 12/2024</h3>
               <p className="text-gray-600">
-                Mendirikan dan mengelola layanan jasa pembuatan tugas akademik
-                dan non-akademik, meliputi penulisan makalah, pengolahan data
-                Excel, desain presentasi PowerPoint, serta pembuatan website dan
-                desain grafis. Fokus pada kualitas, ketepatan waktu, dan
-                kepuasan klien.
+                Bertanggung jawab dalam pengembangan sistem digital, termasuk
+                pembuatan website ecommerce menggunakan framework Laravel, mulai
+                dari proses frontend, backend, hingga testing.
               </p>
             </div>
           </div>
@@ -50,10 +50,10 @@ function Experience() {
 
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 mx-auto">
         <ProjectCard>
           <div className="hidden w-120 md:flex md:justify-end">
-            <h3 className="py-5 ">08/2024 - 12/2024</h3>
+            <h3 className="py-5 ">08/2021 - 08/2026</h3>
           </div>
         </ProjectCard>
 
@@ -69,15 +69,15 @@ function Experience() {
         <ProjectCard>
           <div className="md:w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="md:text-left text-center p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
-              <h2 className="font-semibold">Owner</h2>
-              <h3 className="font-semibold">Jasa Joki Tugas Vyyy</h3>
-              <h3 className="md:hidden font-semibold">08/2024 - 12/2024</h3>
+              <h2 className="font-semibold">
+                Sekretaris dan Bendahara Organisasi
+              </h2>
+              <h3 className="font-semibold">Karang Taruna Balongmojo</h3>
+              <h3 className="md:hidden font-semibold">08/2021 - 08/2026</h3>
               <p className="text-gray-600">
-                Mendirikan dan mengelola layanan jasa pembuatan tugas akademik
-                dan non-akademik, meliputi penulisan makalah, pengolahan data
-                Excel, desain presentasi PowerPoint, serta pembuatan website dan
-                desain grafis. Fokus pada kualitas, ketepatan waktu, dan
-                kepuasan klien.
+                Bertugas mencatat pemasukan dan pengeluaran keuangan organisasi,
+                menyusun surat undangan, proposal sponsor, serta mengelola
+                administrasi untuk mendukung kelancaran kegiatan Kartar.
               </p>
             </div>
           </div>
@@ -86,13 +86,13 @@ function Experience() {
 
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center md:text-left mt-4 md:gap-8 px-8 mx-auto">
         <ProjectCard>
           <div className="md:w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="md:text-left text-center p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
               <h2 className="font-semibold">Owner</h2>
               <h3 className="font-semibold">Jasa Joki Tugas Vyyy</h3>
-              <h3 className="md:hidden font-semibold">08/2024 - 12/2024</h3>
+              <h3 className="md:hidden font-semibold">01/2022 - 08/2025</h3>
               <p className="text-gray-600">
                 Mendirikan dan mengelola layanan jasa pembuatan tugas akademik
                 dan non-akademik, meliputi penulisan makalah, pengolahan data
@@ -115,17 +115,17 @@ function Experience() {
 
         <ProjectCard>
           <div className="hidden md:flex w-120 md:text-left text-center">
-            <h3 className="py-5">08/2024 - 12/2024</h3>
+            <h3 className="py-5">01/2022 - 08/2025 </h3>
           </div>
         </ProjectCard>
       </div>
 
       <br />
 
-      <div className="relative flex flex-col md:flex-row md:justify-center text-center mt-4 md:gap-8 px-8 max-w-xl mx-auto">
+      <div className="relative flex flex-col md:flex-row md:justify-center text-center mt-4 md:gap-8 px-8 mx-auto">
         <ProjectCard>
           <div className="hidden w-120 md:flex md:justify-end">
-            <h3 className="py-5 ">08/2024 - 12/2024</h3>
+            <h3 className="py-5 ">08/2023 - 08/2025</h3>
           </div>
         </ProjectCard>
 
@@ -141,15 +141,13 @@ function Experience() {
         <ProjectCard>
           <div className="md:w-120 p-[2px] rounded-lg bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]">
             <div className="md:text-left text-center p-6 rounded-lg bg-white backdrop-blur-md shadow-lg">
-              <h2 className="font-semibold">Owner</h2>
-              <h3 className="font-semibold">Jasa Joki Tugas Vyyy</h3>
-              <h3 className="md:hidden font-semibold">08/2024 - 12/2024</h3>
+              <h2 className="font-semibold">Guru Ekstrakurikuler</h2>
+              <h3 className="font-semibold">SMP Negeri 28 Gresi</h3>
+              <h3 className="md:hidden font-semibold">08/2023 - 08/2025</h3>
               <p className="text-gray-600">
-                Mendirikan dan mengelola layanan jasa pembuatan tugas akademik
-                dan non-akademik, meliputi penulisan makalah, pengolahan data
-                Excel, desain presentasi PowerPoint, serta pembuatan website dan
-                desain grafis. Fokus pada kualitas, ketepatan waktu, dan
-                kepuasan klien.
+                Mengajar ekstrakurikuler pencak silat sebagai upaya pengembangan
+                minat dan bakat siswa di bidang olahraga dan seni bela diri
+                tradisional, serta berhasil membimbing siswa meraih prestasi.
               </p>
             </div>
           </div>

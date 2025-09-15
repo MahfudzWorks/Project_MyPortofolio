@@ -50,10 +50,10 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative flex flex-col justify-center items-center scroll-mt-10 "
+      className="relative flex flex-col justify-center items-center scroll-mt-20 "
     >
       <AnimatedBavkgroundV2 />
-      <h1 className="text-3xl font-bold text-black mt-16">
+      <h1 className="text-3xl font-bold text-black mt-14">
         <span className="inline-block animate-bounce">💻</span> Projects{" "}
         <span className="inline-block animate-pulse">🚧</span>
       </h1>
@@ -61,11 +61,11 @@ function Projects() {
       {projects.map((project) => (
         <div
           key={project.id}
-          className="flex flex-col md:flex-row justify-between px-8 mt-4 mx-auto max-w-6xl"
+          className="relative flex flex-col md:flex-row justify-between max-w-6xl px-8 mt-4 mx-auto"
         >
           <ProjectCard>
             <div className="md:flex p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]">
-              <div className="w-100 flex flex-col bg-white p-6 shadow-lg flex-1 items-center md:items-start">
+              <div className="md:w-100 flex flex-col bg-white p-6 shadow-lg flex-1 items-center md:items-start text-center md:text-left">
                 <h2 className="font-semibold">{project.title}</h2>
                 <br />
                 <p className="text-gray-600">
@@ -75,14 +75,14 @@ function Projects() {
                 </p>
                 <button
                   onClick={() => toggleShowMore(project.id)}
-                  className="md:text-left text-gray-600 font-semibold mt-2 hover:underline"
+                  className="text-center md:text-left text-gray-600 font-semibold mt-2 hover:underline"
                 >
                   {showMore[project.id]
                     ? "Tampilkan lebih sedikit"
                     : "Tampilkan lebih banyak"}
                 </button>
                 <br />
-                <div className="flex gap-4">
+                <div className="flex flex-wrap justify-center gap-4">
                   {project.icons.map((icon, index) => (
                     <img
                       key={index}
@@ -94,11 +94,11 @@ function Projects() {
                 </div>
               </div>
 
-              <div className="w-100 bg-white flex justify-center items-center">
+              <div className="md:w-100 bg-white flex justify-center items-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-auto my-10 shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]"
+                  className="w-full h-auto p-4 md:p-0 md:shadow-[-5px_10px_15px_rgba(0,0,0,0.2)]"
                 />
               </div>
             </div>

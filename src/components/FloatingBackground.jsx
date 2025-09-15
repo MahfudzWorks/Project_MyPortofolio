@@ -18,9 +18,10 @@ function FloatingBackground() {
     Array(circles.length).fill({ x: 0, y: 0 })
   );
 
+  // Batasi biar gak jauh keluar layar
   const randomPosition = () => ({
-    x: Math.floor(Math.random() * 400) - 200,
-    y: Math.floor(Math.random() * 400) - 200,
+    x: Math.floor(Math.random() * 150) - 75,
+    y: Math.floor(Math.random() * 150) - 75,
   });
 
   useEffect(() => {
@@ -32,11 +33,12 @@ function FloatingBackground() {
   }, []);
 
   return (
-    <div className="absolute inset-0 -z-10 overflow-hidden">
+    // -inset-32: kasih ruang ekstra biar lingkaran ga kepotong
+    <div className="absolute -inset-32 -z-10 overflow-hidden">
       {circles.map((style, i) => (
         <motion.div
           key={i}
-          className={`absolute rounded-full overflow-hidden ${style}`}
+          className={`absolute rounded-full ${style}`}
           animate={positions[i]}
           transition={{
             duration: 3,

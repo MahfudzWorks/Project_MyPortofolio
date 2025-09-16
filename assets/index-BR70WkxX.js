@@ -63,7 +63,7 @@ Please change the parent <Route path="${U}"> to <Route path="${U==="/"?"*":`${U}
              text-sm sm:text-base\r
              transition-all duration-300 ease-in-out\r
              hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-500 hover:to-yellow-400\r
-             hover:shadow-md active:scale-[0.98]`,children:[T.jsx("span",{children:"Contact me here"}),T.jsx(G4,{className:"w-5 h-5"})]})}),T.jsx("a",{href:"assets/CV.pdf",download:!0,className:"p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-3xl inline-block",children:T.jsxs("div",{className:`flex items-center justify-center gap-2 \r
+             hover:shadow-md active:scale-[0.98]`,children:[T.jsx("span",{children:"Contact me here"}),T.jsx(G4,{className:"w-5 h-5"})]})}),T.jsx("a",{href:"CV Mahfudz Alfanani Syaviqi.pdf",download:!0,className:"p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-3xl inline-block",children:T.jsxs("div",{className:`flex items-center justify-center gap-2 \r
              bg-white text-black \r
              font-semibold px-6 h-10 sm:h-12 rounded-3xl\r
              text-sm sm:text-base\r

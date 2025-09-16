@@ -11,7 +11,7 @@ function Home() {
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-3xl px-4 sm:px-6">
         <img
-          src="assets/Profile.png"
+          src="assets/Profile.svg"
           alt="profile"
           className="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white shadow-lg object-cover"
         />

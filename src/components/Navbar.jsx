@@ -4,6 +4,26 @@ import { HiMenu, HiX } from "react-icons/hi";
 function Navbar() {
   const [activeSection, setActiveSection] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+
+  useEffect(() => {
+    let lastY = window.scrollY;
+
+    const handleScroll = () => {
+      if (window.scrollY <= 0) {
+        setShowNavbar(true); // selalu tampil di atas
+      } else if (window.scrollY > lastY) {
+        setShowNavbar(false); // sembunyi kalau scroll ke bawah
+      } else {
+        setShowNavbar(true); // muncul kalau scroll ke atas
+      }
+
+      lastY = window.scrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section");
@@ -20,7 +40,6 @@ function Navbar() {
     );
 
     sections.forEach((section) => observer.observe(section));
-
     return () => observer.disconnect();
   }, []);
 
@@ -40,8 +59,11 @@ function Navbar() {
   ];
 
   return (
-    <div className="md:w-160 mx-auto rounded-4xl p-3 m-2 shadow-lg sticky top-2 z-50">
-      {" "}
+    <div
+      className={`md:w-160 rounded-4xl p-1 shadow-lg fixed top-2 left-1/2 -translate-x-1/2 z-50 transition-transform duration-500 ${
+        showNavbar ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
       <nav className="flex justify-center bg-white text-black gap-4 rounded-3xl">
         <ul className="hidden md:flex list-none space-x-8 items-center">
           {navLinks.map((link) => (
@@ -60,6 +82,7 @@ function Navbar() {
           {isOpen ? <HiX /> : <HiMenu />}
         </button>
       </nav>
+
       {isOpen && (
         <ul className="md:hidden mt-4 flex flex-col gap-4 bg-white rounded-xl p-4 shadow">
           {navLinks.map((link) => (

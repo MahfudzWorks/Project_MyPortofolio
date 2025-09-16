@@ -47,7 +47,7 @@ function Home() {
           </a>
 
           <a
-            href="assets/CV.pdf"
+            href="CV Mahfudz Alfanani Syaviqi.pdf"
             download
             className="p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-3xl inline-block"
           >

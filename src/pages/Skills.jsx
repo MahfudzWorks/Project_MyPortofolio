@@ -108,6 +108,22 @@ function Skills() {
         />
       ),
     },
+    {
+      name: "ChatGPT",
+      icon: (
+        <img src="/icons/ChatGPT.svg" alt="ChatGPT" className="w-12 h-12" />
+      ),
+    },
+    {
+      name: "GitHub Copilot",
+      icon: <img src="/icons/GitHub.svg" alt="Copilot" className="w-12 h-12" />,
+    },
+    {
+      name: "Gemini Ai",
+      icon: (
+        <img src="/icons/Gemini Ai.svg" alt="Gemini" className="w-12 h-12" />
+      ),
+    },
   ];
 
   // pilih list sesuai view

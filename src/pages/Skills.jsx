@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { useState } from "react";
 import CenterBlurBackgroundV2 from "../components/CenterBlurBackgroundV2";
 
 import {
@@ -13,7 +14,11 @@ import {
 
 import { SiMysql, SiTailwindcss } from "react-icons/si";
 
+import { SiCanva, SiFigma, SiAdobephotoshop } from "react-icons/si";
+
 function Skills() {
+  const [view, setView] = useState("skills"); // "skills" | "tools"
+
   const skills = [
     { name: "HTML", icon: <FaHtml5 className="text-orange-500 text-5xl" /> },
     { name: "CSS", icon: <FaCss3Alt className="text-blue-500 text-5xl" /> },
@@ -31,25 +36,113 @@ function Skills() {
     },
   ];
 
+  const tools = [
+    {
+      name: "Word",
+      icon: (
+        <img src="/icons/Microsoft Word.svg" alt="Word" className="w-12 h-12" />
+      ),
+    },
+    {
+      name: "Excel",
+      icon: (
+        <img
+          src="/icons/Microsoft Excel.svg"
+          alt="Excel"
+          className="w-12 h-12"
+        />
+      ),
+    },
+    {
+      name: "PowerPoint",
+      icon: (
+        <img
+          src="/icons/Microsoft PowerPoint.svg"
+          alt="PowerPoint"
+          className="w-12 h-12"
+        />
+      ),
+    },
+    {
+      name: "To Do",
+      icon: (
+        <img
+          src="/icons/Microsoft To Do App.svg"
+          alt="To Do"
+          className="w-12 h-12"
+        />
+      ),
+    },
+    {
+      name: "VS Code",
+      icon: (
+        <img
+          src="/icons/Visual Studio Code.svg"
+          alt="Visual Studio Code"
+          className="w-12 h-12"
+        />
+      ),
+    },
+    {
+      name: "Figma",
+      icon: <img src="/icons/Figma.svg" alt="Figma" className="w-12 h-12" />,
+    },
+    { name: "Canva", icon: <SiCanva className="text-cyan-400 text-5xl" /> },
+    {
+      name: "Illustrator",
+      icon: (
+        <img
+          src="/icons/Adobe Illustrator.svg"
+          alt="Illustrator"
+          className="w-12 h-12"
+        />
+      ),
+    },
+    {
+      name: "Photoshop",
+      icon: (
+        <img
+          src="/icons/Adobe Photoshop.svg"
+          alt="Photoshop"
+          className="w-12 h-12"
+        />
+      ),
+    },
+  ];
+
+  // pilih list sesuai view
+  const data = view === "skills" ? skills : tools;
+
   return (
     <section
       id="skills"
       className="flex flex-col justify-center items-center px-6 py-12 relative scroll-mt-10"
     >
       <CenterBlurBackgroundV2 />
+
       <h1 className="text-3xl font-bold text-black mb-6">
-        <span className="inline-block animate-spin">🛠️</span> Skills{" "}
-        <span className="inline-block animate-bounce">⚡</span>
+        {view === "skills" ? (
+          <>
+            <span className="inline-block animate-spin">🛠️</span> Skills{" "}
+            <span className="inline-block animate-bounce">⚡</span>
+          </>
+        ) : (
+          <>
+            <span className="inline-block animate-bounce">⚙️</span> Tools{" "}
+            <span className="inline-block animate-spin">🧰</span>
+          </>
+        )}
       </h1>
 
       <p className="text-center max-w-2xl text-gray-600 mb-12">
-        Berikut adalah beberapa skill utama yang saya kuasai dalam pengembangan
-        web, mulai dari frontend, backend, hingga framework modern.
+        {view === "skills"
+          ? "Berikut adalah beberapa skill utama yang saya kuasai dalam pengembangan web."
+          : "Berikut adalah beberapa tools yang saya gunakan untuk menunjang produktivitas."}
       </p>
 
-      {/* Grid Skills */}
+      {/* Grid Items */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-        {skills.map((skill, index) => (
+        {data.map((item, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.08 }}
@@ -58,15 +151,47 @@ function Skills() {
             className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 p-[2px] rounded-2xl bg-[linear-gradient(to_right,#4285F4,#EA4335,#FBBC05,#34A853)]"
           >
             <div className="flex flex-col items-center justify-center w-full h-full bg-white backdrop-blur-md rounded-2xl shadow-lg hover:shadow-xl">
-              <div className="mb-4">{skill.icon}</div>
+              <div className="mb-4">{item.icon}</div>
               <h3 className="font-semibold text-sm sm:text-base md:text-lg text-gray-800">
-                {skill.name}
+                {item.name}
               </h3>
             </div>
           </motion.div>
         ))}
       </div>
-      <div className="h-32" />
+
+      {/* Tombol Toggle */}
+      <div className="mt-12 flex gap-4">
+        {view === "skills" ? (
+          <div className="mt-6 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-lg inline-block">
+            <button
+              onClick={() => setView("tools")}
+              className="flex items-center justify-center 
+                 bg-white text-gray-600 font-semibold 
+                 px-6 py-2 rounded-lg 
+                 transition-all duration-300 ease-in-out
+                 hover:bg-gradient-to-r hover:from-green-50 hover:to-blue-50 
+                 hover:shadow-md active:scale-[0.98]"
+            >
+              Lihat Tools ⚙️
+            </button>
+          </div>
+        ) : (
+          <div className="mt-6 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-lg inline-block">
+            <button
+              onClick={() => setView("skills")}
+              className="flex items-center justify-center 
+                 bg-white text-gray-600 font-semibold 
+                 px-6 py-2 rounded-lg 
+                 transition-all duration-300 ease-in-out
+                 hover:bg-gradient-to-r hover:from-green-50 hover:to-blue-50 
+                 hover:shadow-md active:scale-[0.98]"
+            >
+              Kembali ke Skills 🛠️
+            </button>
+          </div>
+        )}
+      </div>
     </section>
   );
 }

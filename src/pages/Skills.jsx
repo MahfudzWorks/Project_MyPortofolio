@@ -85,7 +85,7 @@ function Skills() {
     },
     {
       name: "Figma",
-      icon: <img src="/icons/Figma.svg" alt="Figma" className="w-12 h-12" />,
+      icon: <img src="icons/Figma.svg" alt="Figma" className="w-12 h-12" />,
     },
     { name: "Canva", icon: <SiCanva className="text-cyan-400 text-5xl" /> },
     {

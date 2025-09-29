@@ -40,14 +40,14 @@ function Skills() {
     {
       name: "Word",
       icon: (
-        <img src="/icons/Microsoft Word.svg" alt="Word" className="w-12 h-12" />
+        <img src="icons/Microsoft Word.svg" alt="Word" className="w-12 h-12" />
       ),
     },
     {
       name: "Excel",
       icon: (
         <img
-          src="/icons/Microsoft Excel.svg"
+          src="icons/Microsoft Excel.svg"
           alt="Excel"
           className="w-12 h-12"
         />
@@ -57,7 +57,7 @@ function Skills() {
       name: "PowerPoint",
       icon: (
         <img
-          src="/icons/Microsoft PowerPoint.svg"
+          src="icons/Microsoft PowerPoint.svg"
           alt="PowerPoint"
           className="w-12 h-12"
         />
@@ -67,7 +67,7 @@ function Skills() {
       name: "To Do",
       icon: (
         <img
-          src="/icons/Microsoft To Do App.svg"
+          src="icons/Microsoft To Do App.svg"
           alt="To Do"
           className="w-12 h-12"
         />
@@ -77,7 +77,7 @@ function Skills() {
       name: "VS Code",
       icon: (
         <img
-          src="/icons/Visual Studio Code.svg"
+          src="icons/Visual Studio Code.svg"
           alt="Visual Studio Code"
           className="w-12 h-12"
         />
@@ -92,7 +92,7 @@ function Skills() {
       name: "Illustrator",
       icon: (
         <img
-          src="/icons/Adobe Illustrator.svg"
+          src="icons/Adobe Illustrator.svg"
           alt="Illustrator"
           className="w-12 h-12"
         />
@@ -102,7 +102,7 @@ function Skills() {
       name: "Photoshop",
       icon: (
         <img
-          src="/icons/Adobe Photoshop.svg"
+          src="icons/Adobe Photoshop.svg"
           alt="Photoshop"
           className="w-12 h-12"
         />
@@ -110,18 +110,16 @@ function Skills() {
     },
     {
       name: "ChatGPT",
-      icon: (
-        <img src="/icons/ChatGPT.svg" alt="ChatGPT" className="w-12 h-12" />
-      ),
+      icon: <img src="icons/ChatGPT.svg" alt="ChatGPT" className="w-12 h-12" />,
     },
     {
       name: "GitHub Copilot",
-      icon: <img src="/icons/GitHub.svg" alt="Copilot" className="w-12 h-12" />,
+      icon: <img src="icons/GitHub.svg" alt="Copilot" className="w-12 h-12" />,
     },
     {
       name: "Gemini Ai",
       icon: (
-        <img src="/icons/Gemini Ai.svg" alt="Gemini" className="w-12 h-12" />
+        <img src="icons/Gemini Ai.svg" alt="Gemini" className="w-12 h-12" />
       ),
     },
   ];

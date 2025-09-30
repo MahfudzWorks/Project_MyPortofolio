@@ -124,7 +124,6 @@ function Skills() {
     },
   ];
 
-  // pilih list sesuai view
   const data = view === "skills" ? skills : tools;
 
   return (
@@ -154,7 +153,6 @@ function Skills() {
           : "Berikut adalah beberapa tools yang saya gunakan untuk menunjang produktivitas."}
       </p>
 
-      {/* Grid Items */}
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {data.map((item, index) => (
           <motion.div
@@ -174,7 +172,6 @@ function Skills() {
         ))}
       </div>
 
-      {/* Tombol Toggle */}
       <div className="mt-12 flex gap-4">
         {view === "skills" ? (
           <div className="mt-6 p-[2px] bg-[linear-gradient(to_right,#3b82f6,#ef4444,#facc15,#22c55e)] rounded-lg inline-block">

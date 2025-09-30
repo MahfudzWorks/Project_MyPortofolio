@@ -11,11 +11,11 @@ function Navbar() {
 
     const handleScroll = () => {
       if (window.scrollY <= 0) {
-        setShowNavbar(true); // selalu tampil di atas
+        setShowNavbar(true);
       } else if (window.scrollY > lastY) {
-        setShowNavbar(false); // sembunyi kalau scroll ke bawah
+        setShowNavbar(false);
       } else {
-        setShowNavbar(true); // muncul kalau scroll ke atas
+        setShowNavbar(true);
       }
 
       lastY = window.scrollY;

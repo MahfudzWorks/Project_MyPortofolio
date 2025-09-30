@@ -5,7 +5,7 @@ function Home() {
   return (
     <section
       id="home"
-      className="relative scroll-mt-15 flex flex-col items-center justify-center py-12 sm:py-16"
+      className="relative scroll-mt-15 flex flex-col items-center justify-center py-12 sm:py-24"
     >
       <FloatingBackground />
 

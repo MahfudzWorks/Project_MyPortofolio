@@ -6,6 +6,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
 
+  // Efek sembunyi/muncul saat scroll
   useEffect(() => {
     let lastY = window.scrollY;
 
@@ -17,7 +18,6 @@ function Navbar() {
       } else {
         setShowNavbar(true);
       }
-
       lastY = window.scrollY;
     };
 
@@ -25,6 +25,7 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Efek aktifkan link sesuai posisi scroll
   useEffect(() => {
     const sections = document.querySelectorAll("section");
 
@@ -42,6 +43,15 @@ function Navbar() {
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, []);
+
+  // Fungsi scroll halus ke section
+  const handleScrollTo = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+    setIsOpen(false);
+  };
 
   const linkClass = (id) =>
     activeSection === id
@@ -68,9 +78,12 @@ function Navbar() {
         <ul className="hidden md:flex list-none space-x-8 items-center">
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={`#${link.id}`} className={linkClass(link.id)}>
+              <button
+                onClick={() => handleScrollTo(link.id)}
+                className={`${linkClass(link.id)} focus:outline-none`}
+              >
                 {link.label}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -87,13 +100,12 @@ function Navbar() {
         <ul className="md:hidden mt-4 flex flex-col gap-4 bg-white rounded-xl p-4 shadow">
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a
-                href={`#${link.id}`}
-                className={linkClass(link.id)}
-                onClick={() => setIsOpen(false)}
+              <button
+                onClick={() => handleScrollTo(link.id)}
+                className={`${linkClass(link.id)} focus:outline-none`}
               >
                 {link.label}
-              </a>
+              </button>
             </li>
           ))}
         </ul>
